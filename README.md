@@ -55,7 +55,7 @@ $clientes = $asaas->cliente->index();
 $clientes = $asaas->cliente->getAll(array $filtros);
 
 // Retorna os dados do cliente de acordo com o Id
-$cobranca = $asaas->cliente->getById(123);
+$clientes = $asaas->cliente->getById(123);
 
 // Retorna os dados do cliente de acordo com o Email
 $clientes = $asaas->cliente->getByEmail('email@mail.com');
