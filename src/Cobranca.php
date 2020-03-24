@@ -37,6 +37,10 @@ class Cobranca {
         return $this->http->get('/payments/'.$id);
     }
 
+    public function getLinhaDigitavel($id){
+        return $this->http->get('/payments/'.$id.'/identificationField');
+    }
+
     // Retorna a listagem de cobranças de acordo com o Id do Cliente
     public function getByCustomer($customer_id){
         return $this->http->get('/payments?customer='.$customer_id);

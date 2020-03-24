@@ -90,6 +90,9 @@ $cobrancas = $asaas->cobranca->getByCustomer($customer_id);
 // Retorna a listagem de cobranças de acordo com o Id da Assinaturas
 $cobrancas = $asaas->cobranca->getBySubscription($subscription_id);
 
+// Retorna a linha digitavel da cobrança de acordo com o Id
+$cobranca = $asaas->cobranca->getLinhaDigitavel(123);
+
 // Insere uma nova cobrança
 $cobranca = $asaas->cobranca->create(array $dadosCobranca);
 

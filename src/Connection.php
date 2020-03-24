@@ -77,5 +77,31 @@ class Connection {
         return $response;
 
     }
+
+    public function put($url, $params)
+    {
+        $params = json_encode($params);
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, $this->base_url .'.asaas.com/api/v3'. $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+        curl_setopt($ch, CURLOPT_PUT, TRUE);
+
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Content-Type: application/json",
+            "access_token: ".$this->api_key
+        ));
+
+        $response = curl_exec($ch);
+        curl_close($ch);
+        $response = json_decode($response);
+
+        return $response;
+
+    }
     
 }
