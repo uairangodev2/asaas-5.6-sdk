@@ -4,9 +4,7 @@ SDK não-oficial de integração á API do serviço www.asaas.com
 
 Adaptador por João Paulo
 
-[![Maintainer](http://img.shields.io/badge/maintainer-@codephix-blue.svg?style=flat-square)](https://twitter.com/codephix)
 [![Source Code](https://img.shields.io/badge/source-codephix/asaas--sdk-blue.svg?style=flat-square)](https://github.com/codephix/asaas-sdk)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/codephix/asaas-sdk.svg?style=flat-square)](https://packagist.org/packages/codephix/asaas-sdk)
 [![Latest Version](https://img.shields.io/github/release/codephix/asaas-sdk.svg?style=flat-square)](https://github.com/codephix/asaas-sdk/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Build](https://img.shields.io/scrutinizer/build/g/codephix/asaas-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/codephix/asaas-sdk)
