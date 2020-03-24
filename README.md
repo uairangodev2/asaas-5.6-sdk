@@ -1,8 +1,8 @@
-# Asaas @CodePhix
+# Asaas @CodePhix PHP 5.6
 
 SDK não-oficial de integração á API do serviço www.asaas.com
 
-Adaptador por João Paulo
+Adaptado por João Paulo
 
 [![Source Code](https://img.shields.io/badge/source-codephix/asaas--sdk-blue.svg?style=flat-square)](https://github.com/codephix/asaas-sdk)
 [![Latest Version](https://img.shields.io/github/release/codephix/asaas-sdk.svg?style=flat-square)](https://github.com/codephix/asaas-sdk/releases)
@@ -10,9 +10,6 @@ Adaptador por João Paulo
 [![Build](https://img.shields.io/scrutinizer/build/g/codephix/asaas-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/codephix/asaas-sdk)
 [![Quality Score](https://img.shields.io/scrutinizer/g/codephix/asaas-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/codephix/asaas-sdk)
 [![Total Downloads](https://img.shields.io/packagist/dt/codephix/asaas-sdk.svg?style=flat-square)](https://packagist.org/packages/codephix/asaas-sdk)
-
-
-### Projeto em andamento
 
 
 ## Installation
