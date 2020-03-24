@@ -1,0 +1,24 @@
+{
+  "name": "uairango/asaas-5.6-sdk",
+  "type"       : "library",
+  "description": "Adaptaçao Asaas.com PHP API Wrapper para PHP 5.6",
+  "keywords"   : ["Asaas", "API", "Payment SaaS", "Credit Card", "Boleto"],
+  "homepage": "http://www.uairango.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "João Paulo",
+      "email": "jpmdik@gmail.com",
+      "role": "Developer",
+      "homepage": "https://www.jpmdik.com.br"
+    }
+  ],
+  "require": {
+    "php": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodePhix\\Asaas\\": "src"
+    }
+  }
+}
