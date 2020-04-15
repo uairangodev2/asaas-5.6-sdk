@@ -15,7 +15,7 @@ Adaptado por João Paulo
 ## Installation
 
 ```bash
-composer require uairango/asaas-5.6-sdk
+composer require uairango/asaas-5.6-sdk:dev-master
 ```
 
 Exemplo
