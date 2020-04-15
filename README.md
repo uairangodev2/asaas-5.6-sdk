@@ -15,7 +15,7 @@ Adaptado por João Paulo
 ## Installation
 
 ```bash
-composer require codephix/asaas-sdk
+composer require uairango/asaas-5.6-sdk
 ```
 
 Exemplo
