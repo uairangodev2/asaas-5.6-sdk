@@ -4,12 +4,7 @@ SDK não-oficial de integração á API do serviço www.asaas.com
 
 Adaptado por João Paulo
 
-[![Source Code](https://img.shields.io/badge/source-codephix/asaas--sdk-blue.svg?style=flat-square)](https://github.com/codephix/asaas-sdk)
-[![Latest Version](https://img.shields.io/github/release/codephix/asaas-sdk.svg?style=flat-square)](https://github.com/codephix/asaas-sdk/releases)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build](https://img.shields.io/scrutinizer/build/g/codephix/asaas-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/codephix/asaas-sdk)
-[![Quality Score](https://img.shields.io/scrutinizer/g/codephix/asaas-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/codephix/asaas-sdk)
-[![Total Downloads](https://img.shields.io/packagist/dt/codephix/asaas-sdk.svg?style=flat-square)](https://packagist.org/packages/codephix/asaas-sdk)
+Original: [https://github.com/codephix/asaas-sdk](https://github.com/codephix/asaas-sdk)
 
 
 ## Installation
@@ -117,6 +112,49 @@ $cobranca = $asaas->cobranca->confirmacao(id);
 
 // Deleta uma cobrança
 $asaas->cobranca->delete(123);
+```
+
+Transferências
+--------
+
+```php
+
+// Retorna a listagem de transferências
+$transferencias = $asaas->transferencia->getAll();
+
+// Retorna o saldo disponível para transferência
+$transferencias = $asaas->transferencia->consultaSaldo();
+
+// Retorna o walletId é retornado de criação de uma conta Asaas.
+$transferencias = $asaas->transferencia->consultaWalletId();
+
+//Transferir para conta bancária
+$dadosConta = [
+    "value" => 1000.00,
+    "bankAccount" => [
+        "bank"=> [
+            "code"=> "033"
+        ],
+        "accountName" => "Conta do Santander",
+        "ownerName" => "Marcelo Almeida",
+        "ownerBirthDate" => "1995-04-12",
+        "cpfCnpj" => "52233424611",
+        "agency" => "1263",
+        "account" => "9999991",
+        "accountDigit" => "1",
+        "bankAccountType" => "CONTA_CORRENTE",
+    ]
+];
+
+$transferencias = $asaas->transferencia->conta($dadosConta);
+
+//Transferir para conta Asaas
+$contaAsas = [
+  "value" => 1000,
+  "walletId" => "0021c712-d963-4d86-a59d-031e7ac51a2e"
+];
+
+$transferencias = $asaas->transferencia->conta($contaAsas);
 ```
 
 
